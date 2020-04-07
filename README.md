@@ -1,11 +1,10 @@
-## My Project
+# Automate RDS Aurora Snapshots for disaster recovery
 
-TODO: Fill this README out!
+This repository contains a solution for implementing disaster recovery for Aurora database clusters by automating the process of cluster snapshot creation and copying to different AWS Regions. This process can be triggered on an ad hoc basis or on a defined schedule using either AWS Systems Manager Maintenance Windows or an Amazon CloudWatchevent rule, which uses an Automation document as a target based on your RTO and RPO requirements.
 
-Be sure to:
+![Architecture](diagram.png)
 
-* Change the title in this README
-* Edit your repository description on GitHub
+This solution can be deployed by using this [template](SSM_automation_execute_script_CFN.yaml).
 
 ## License
 
